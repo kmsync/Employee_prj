@@ -1,11 +1,16 @@
 package com.bilgeadam.employeeprj.entitiy;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Employee {
 
     private String name;
     private int age;
     private String designation;
     private double salary;
+    private Date dogtar;
+
 
     public String getName() {
         return name;
@@ -43,6 +48,14 @@ public class Employee {
         this.name = name;
     }
 
+    public Date getDogtar() {
+        return dogtar;
+    }
+
+    public void setDogtar(Date dogtar) {
+        this.dogtar = dogtar;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -50,6 +63,7 @@ public class Employee {
                 ", age=" + age +
                 ", designation='" + designation + '\'' +
                 ", salary=" + salary +
+                ", dogtar=" + dogtar +
                 '}';
     }
 
@@ -58,6 +72,14 @@ public class Employee {
         System.out.println(getAge());
         System.out.println(getDesignation());
         System.out.println(getSalary());
+        System.out.println(getDogtar());
+        System.out.println("--------------");
+
+        //SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        //System.out.println(sdf.format(getDogtar()));
+
+        System.out.println();
+
         System.out.println("--------------");
     }
 }
