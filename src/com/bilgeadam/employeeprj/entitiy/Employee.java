@@ -1,5 +1,7 @@
 package com.bilgeadam.employeeprj.entitiy;
 
+import com.bilgeadam.ortakv2.Ortak;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -78,7 +80,7 @@ public class Employee {
         //SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         //System.out.println(sdf.format(getDogtar()));
 
-        System.out.println();
+        System.out.println(Ortak.tarihToStr(getDogtar()));
 
         System.out.println("--------------");
     }
